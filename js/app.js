@@ -80,6 +80,16 @@ function makeModal(user,fromElem){
     document.getElementById('modal-close-btn').addEventListener('click',()=>{
         document.querySelector('.modal-container').remove();
     });
+    
+    // Removes Previous button if no more Cards prior to this Card
+    if (fromElem.previousElementSibling === null){
+        document.getElementById('modal-prev').classList.add('hide');
+    }
+
+    // Remove Next button from UI if no more Cards after this Card
+    if (fromElem.nextElementSibling === null){
+        document.getElementById('modal-next').classList.add('hide');
+    }
 
     //Enables Previous button on the Modal
     document.getElementById('modal-prev').addEventListener('click',(event)=>{
