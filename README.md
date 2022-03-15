@@ -6,6 +6,6 @@ Utilize Random User Generator API (https://randomuser.me/) to grab 1nformation f
 
 It depended on Javascript and a modern Web browser with Javascript supports.
 
-#Exceed Expectation
+# Exceed Expectation
 Allow case insensitive partial string searching with First and Last name.
 The background of each Card in the gallery is randomly selected from 12 possible colors.
